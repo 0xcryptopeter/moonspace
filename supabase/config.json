@@ -1,0 +1,7 @@
+{
+  "project_id": "your_project_id",
+  "schema": "public",
+  "typescript": {
+    "path": "../src/types/database.types.ts"
+  }
+} 
