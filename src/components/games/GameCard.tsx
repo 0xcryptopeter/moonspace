@@ -91,7 +91,7 @@ export function GameCard({ game }: GameCardProps) {
           <div className="min-w-[120px]">
             <div className="text-gray-400 uppercase text-xs tracking-wider mb-2">{calculateDays()}</div>
             <div className="text-white text-base whitespace-nowrap">
-              11/25 - 11/29
+              {formatDate(game.start_date)} - {formatDate(game.end_date)}
             </div>
           </div>
 
