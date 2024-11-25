@@ -31,7 +31,7 @@ export const moonwalkApi = {
   async getGameByCode(gameCode: string): Promise<MoonwalkGame> {
     try {
       console.log('Fetching game:', gameCode)
-      const response = await fetch(`https://api.moonwalk.fit/api/games/${gameCode}`)
+      const response = await fetch(`/api/proxy/games/${gameCode}`)
       
       if (!response.ok) {
         const errorText = await response.text()
@@ -62,7 +62,7 @@ export const moonwalkApi = {
       while (hasMore) {
         console.log(`Fetching players: skip=${skip}, take=${take}`)
         const response = await fetch(
-          `https://api.moonwalk.fit/api/user-games/web/${gameCode}?skip=${skip}&take=${take}`
+          `/api/proxy/user-games/${gameCode}?skip=${skip}&take=${take}`
         )
         
         if (!response.ok) {
