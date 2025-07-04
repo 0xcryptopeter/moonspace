@@ -84,7 +84,6 @@ Moonspace 是一个基于 Moonwalk 生态的社区平台，让用户能够自由
 - 改进文档
 
 ## 联系方式
-- Discord: [加入我们的 Discord]()
 - Twitter: [@MoonspaceApp]()
 - Email: community@moonspace.app
 
